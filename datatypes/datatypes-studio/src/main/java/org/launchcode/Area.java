@@ -59,6 +59,7 @@ public class Area {
         areaOfCircle = Circle.getArea(radius);
         System.out.println("The Area of a Circle with a Radius of " + radius + " is: " + areaOfCircle);
 
+
         input.close();
     }
 }
