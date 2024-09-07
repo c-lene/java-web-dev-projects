@@ -23,6 +23,7 @@ public class ArrayListGradebook {
         } while(!newStudent.equals(""));
 
         // Get student grades
+        // Using For-Each Loop - For each 'student' in 'students' Array...
         for (String student : students) {
             System.out.print("Grade for " + student + ": ");
             Double grade = input.nextDouble();
