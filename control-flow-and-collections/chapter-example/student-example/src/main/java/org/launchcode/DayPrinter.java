@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class DayPrinter {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+
         System.out.println("Enter an integer: ");
         int dayNum = in.nextInt();
 
+        // Switch Statements example
         String day;
         switch (dayNum) {
             case 0:
