@@ -18,6 +18,7 @@ public class Loops {
 
 
         // For-Each Loop Examples
+        System.out.println("");
         System.out.println("~~~~~~ For-Each Loop Examples ~~~~~~");
 
         // For-Each Loop - iterates over any sequence/collection -such as Array
@@ -28,6 +29,7 @@ public class Loops {
         }
 
         // For-Each Loop - converts String to an Array of characters
+        System.out.println("");
         String msg = "Hello World";
 
         for (char c : msg.toCharArray()) {
@@ -36,11 +38,33 @@ public class Loops {
 
 
         // Do-While Loop examples
+        System.out.println("");
         System.out.println("~~~~~~ Do-While Loop Examples ~~~~~~");
 
         do {
             System.out.println("Hello, World");
         } while (false);
 
+
+        // Check Your Understanding - Question 3
+        System.out.println("");
+        System.out.println("~~~~~~ Check Your Understanding - Question 3 ~~~~~~");
+
+        char[] chars = {'p', 'l', 'r', 's', 't'};
+
+        // Prints EACH item in 'chars'
+        for (char i : chars) {
+            System.out.println(i);
+        }
+
+
+        // Check Your Understanding - Question 4
+        System.out.println("");
+        System.out.println("~~~~~~ Check Your Understanding - Question 4 ~~~~~~");
+
+        // Using Do-While Loop - Print Statement is evaluated before the Conditional
+        do {
+            System.out.println("Hello world!");
+        } while (3 < 2);
     }
 }
