@@ -23,5 +23,20 @@ public class ArrayListPlanets {
 
         // Returns 'planetsArray' Array containing the elements of the 'planets' Array
         planets.toArray(planetsArray);
+
+        System.out.print(planetsArray);
+
+
+        // Check Your Understanding - Question #6
+        System.out.println("");
+        System.out.println("Check Your Understanding - Question #6");
+
+        ArrayList<String> charStars = new ArrayList<>();
+        charStars.add("a");
+        charStars.add("b");
+        charStars.add("c");
+
+        System.out.println(charStars);
+
     }
 }
