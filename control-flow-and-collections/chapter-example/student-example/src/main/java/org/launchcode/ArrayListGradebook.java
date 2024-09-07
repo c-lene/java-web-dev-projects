@@ -34,11 +34,13 @@ public class ArrayListGradebook {
         System.out.println("\nClass roster:");
         double sum = 0.0;
 
+        // Using For Loop - For interger 'i' in the range of the number of items in 'students' Array...
         for (int i = 0; i < students.size(); i++) {
             System.out.println(students.get(i) + " (" + grades.get(i) + ")");
             sum += grades.get(i);
         }
 
+        // Calculates the Average Grade for All Students
         double avg = sum / students.size();
         System.out.println("Average grade: " + avg);
     }
