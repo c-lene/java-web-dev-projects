@@ -7,6 +7,7 @@ public class ArrayGradebook {
         // Allow for at most 30 students
         int maxStudents = 30;
 
+        // Declares 'students' & 'grades' Arrays with fixed size of 30
         String[] students = new String[maxStudents];
         double[] grades = new double[maxStudents];
         Scanner input = new Scanner(System.in);
