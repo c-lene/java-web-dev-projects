@@ -3,10 +3,10 @@ package org.launchcode;
 public class HelloWorldRunner {
     public static void main(String[] args) {
 
-        // Created an Instance of the class HelloWorld
+        // Creates an Instance of the class HelloWorld
         HelloWorld hello = new HelloWorld();
 
-        // Executes sayHello() 
+        // Using the instance to execute sayHello()
         hello.sayHello();
     }
 }
