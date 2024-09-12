@@ -5,5 +5,8 @@ public class HelloWorld {
 
     public void sayHello() {
         System.out.println(message);
+
+        // Using "this" keyword as an instance of the given class to refer to the String object 'message'
+        System.out.println(this.message);
     }
 }
