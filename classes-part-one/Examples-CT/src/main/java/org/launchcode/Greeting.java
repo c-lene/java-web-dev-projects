@@ -17,8 +17,10 @@ public class Greeting {
 
 
     // Using "Private" Access Modifier
+    // String 'message' is set to "Private" access modifier because only needs to be used by sayHello()
     private String message = "Hello World";
 
+    // sayHello() is set to "Public" access modfier to be usable by anybody
     public void sayHello() {
         System.out.println(message);
     }
