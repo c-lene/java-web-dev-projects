@@ -17,4 +17,14 @@ public class Temperature {
 
         fahrenheit = aFahrenheit;
     }
+
+
+    public double getCelsius() {
+        return (fahrenheit - 32) * 5.0 / 9.0;
+    }
+
+    public void setCelsius(double celsius) {
+        double fahrenheit = celsius * 9.0 / 5.0 + 32;
+        setFahrenheit(fahrenheit);
+    }
 }
