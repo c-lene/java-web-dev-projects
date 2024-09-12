@@ -8,10 +8,18 @@ public class Greeting {
 //    }
 
 
-    // Access Modifier Example - omiting "Public" Access Modifier gives 'message' field & sayHello() default access
-    String message = "Hello World";
+//    // Access Modifier Example - omiting "Public" Access Modifier gives 'message' field & sayHello() default access
+//    String message = "Hello World";
+//
+//    void sayHello() {
+//        System.out.println(message);
+//    }
 
-    void sayHello() {
+
+    // Using "Private" Access Modifier
+    private String message = "Hello World";
+
+    public void sayHello() {
         System.out.println(message);
     }
 }
