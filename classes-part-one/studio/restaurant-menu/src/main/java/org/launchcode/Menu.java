@@ -14,7 +14,7 @@ public class Menu {
     // Using DEFAULT Constructor
 
 
-    // Setter for 'menuItems'
+    // Getter for 'menuItems'
     public ArrayList<MenuItem> getMenuItems() {
         return menuItems;
     }
