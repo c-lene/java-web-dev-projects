@@ -10,9 +10,25 @@ public class Main {
         System.out.println(garfield.isTired());
 
 
+
         // Confirms Base Class Constructor has been called due to getWeight() prints out "13.0"
         HouseCat spike = new HouseCat("Spike");
         System.out.println(spike.getWeight());
+
+
+        
+        /**** @Override Example ****/
+
+        // Creating new objects from Cat & HouseCat
+        Cat plainCat = new Cat(8.6);
+        HouseCat cheshireCat = new HouseCat("Cheshire", 12);
+
+        // Prints out "Meeeeeeooooowww!"
+        System.out.println(plainCat.noise());
+
+        // Prints out "Hello, my name is Cheshire!"
+        System.out.println(cheshireCat.noise());
+
     }
 
 }
