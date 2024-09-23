@@ -2,7 +2,11 @@ public class HouseCat extends Cat {
     private String name;
     private String species = "Felis catus";
 
+
+    /**** Constructor ****/
     public HouseCat(String aName, double aWeight) {
+
+        // Inherited from Base class 'Cat'
         super(aWeight);
         name = aName;
     }
