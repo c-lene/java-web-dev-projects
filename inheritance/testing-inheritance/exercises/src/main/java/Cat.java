@@ -13,6 +13,11 @@ public class Cat {
         weight = aWeight;
     }
 
+    // Adding additional Constructor in Cat
+    public Cat() {
+        weight = 13;
+    }
+
 
     /**** Getters and Setters ****/
 
