@@ -32,7 +32,7 @@ public class Main {
 
 
         /**** Casting Example ****/
-        
+
         // Polymorphism Example - Creating a HouseCat object stored in Cat variable/field
         Cat suki = new HouseCat("Suki", 8);
 
@@ -42,6 +42,9 @@ public class Main {
         // Results in Compiler Error - since Cat does NOT have isSatisfied Method
         // HouseCat object stored in Cat variable/field CANNOT call methods from HouseCat
 //        suki.isSatisfied();
+
+        // As long as 'suki' really is a HouseCat, this works
+        ((HouseCat) suki).isSatisfied();
 
     }
 
