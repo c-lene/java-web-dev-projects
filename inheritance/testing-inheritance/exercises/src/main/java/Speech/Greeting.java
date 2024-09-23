@@ -1,12 +1,15 @@
 package Speech;
 
 public class Greeting extends Message {
-    private String name;
+    private boolean waving;
 
 
     /**** Constructors ****/
-    public Greeting(String aLanguage, String aText, String aName) {
+    public Greeting(String aLanguage, String aText) {
         super(aLanguage, aText);
-        name = aName;
+    }
+
+    public void wave() {
+        waving = true;
     }
 }
