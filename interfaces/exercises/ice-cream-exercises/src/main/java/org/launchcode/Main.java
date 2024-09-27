@@ -8,6 +8,7 @@ public class Main {
         Case menu = new Case();
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
+        ArrayList<Topping> toppings = menu.getToppings();
 
 
 
@@ -69,11 +70,24 @@ public class Main {
         Comparator comparator2 = new FavorAllergensComparator();
         flavors.sort(comparator2);
 
-        System.out.println("\n\nSORTED Flavors list by Number of Allergens (Highest to Lowest): ");
+        System.out.println("\n\nSORTED Flavors list by Number of Allergens (HIGHEST to LOWEST): ");
         System.out.println("");
 
         for (Flavor flavor : flavors) {
             System.out.println(flavor);
+        }
+
+
+        // BONUS MISSION #2
+        /**** SORTED Toppings List by Number of Allergens (Lowest to Highest) ****/
+        Comparator comparator3 = new ToppingComparator();
+        toppings.sort(comparator3);
+
+        System.out.println("\n\nSORTED Flavors list by Number of Allergens (LOWEST to HIGHEST): ");
+        System.out.println("");
+
+        for (Topping topping : toppings) {
+            System.out.println(topping);
         }
 
     }
