@@ -9,6 +9,9 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
+
+
+
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name' field.
 
         // STEP 1: Creates new 'FlavorComparator' object
@@ -37,14 +40,11 @@ public class Main {
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
 
         /**** SORTED Flavors List by Name ****/
-        System.out.println("\nSORTED Flavors list by Name: ");
+        System.out.println("\n\nSORTED Flavors list by Name: ");
         System.out.println("");
 
         // Iterates through SORTED flavor list to print results
         for (Flavor flavor : flavors) {
-
-            // Prints out the Overrided toString() format in Ingredients
-//            System.out.println(flavorName);\
 
             // Prints out the list of flavor names sorted alphabetically by name
             System.out.println(flavor.getName());
@@ -52,7 +52,7 @@ public class Main {
 
 
         /**** SORTED Cones List by Cost ****/
-        System.out.println("\nSORTED Coness list by Cost: ");
+        System.out.println("\n\nSORTED Coness list by Cost: ");
         System.out.println("");
 
         // Iterates through SORTED flavor list to print results
@@ -61,5 +61,23 @@ public class Main {
             // Prints out the list of cone names & cost sorted by cost
             System.out.println(cone.getName() + ": " + "$" + cone.getCost());
         }
+
+
+        // BONUS MISSION #1
+        /**** SORTED Flavors List by Number of Allergens (Highest to Lowest) ****/
+
+        Comparator comparator2 = new FavorAllergensComparator();
+        flavors.sort(comparator2);
+
+        System.out.println("\n\nSORTED Flavors list by Number of Allergens (Highest to Lowest): ");
+        System.out.println("");
+
+        for (Flavor flavor : flavors) {
+            System.out.println(flavor);
+        }
+
+
+
+
     }
 }
