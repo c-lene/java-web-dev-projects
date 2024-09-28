@@ -72,7 +72,7 @@ public class Student {
     }
 
     // TODO: Add your custom 'toString' method here.
-    //  Make sure it returns a well-formatted String rather than just the class fields.
+    // Make sure it returns a well-formatted String rather than just the class fields.
 
     @Override
     public String toString() {
@@ -82,14 +82,43 @@ public class Student {
 
         return "\nStudent Name: " + name +
                 "\nStudent ID: " + studentId +
+                "\nGrade Level: " + getGradeLevel(numberOfCredits) +
                 "\nNumber of Credits: " + numberOfCredits +
                 "\nGPA: " + roundedGPA + "\n";
     }
 
 
-    // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
-    //  Student objects equal.
+    // TODO: Add your custom 'equals' method here.
+    // Consider which fields should match in order to call two Student objects equal.
 
+    @Override
+    public boolean equals(Object toBeCompared) {
+
+        // Reference check
+        if (this == toBeCompared) {
+            return true;
+        }
+
+        // Null check
+        if (toBeCompared == null) {
+            return false;
+        }
+
+        // Class check
+        if (getClass() != toBeCompared.getClass()) {
+            return false;
+        }
+
+        // Casting
+        Student theStudent = (Student) toBeCompared;
+
+        // Returns TRUE if studentId match in order to call two Student objects equal.
+        return theStudent.getStudentId() == getStudentId();
+    }
+
+
+
+    /**** GETTERS & SETTERS ****/
     public String getName() {
         return name;
     }
