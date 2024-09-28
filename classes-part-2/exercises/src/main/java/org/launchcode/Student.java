@@ -30,17 +30,62 @@ public class Student {
 
 
     //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
-//        // Determine the grade level of the student based on numberOfCredits
-//    }
+    public String getGradeLevel(int credits) {
+        // Determine the grade level of the student based on numberOfCredits
+        if (credits <= 29 && credits > 0) {
+            return "Freshman";
+
+        } else if (credits >= 30 && credits <= 59) {
+            return "Sophomore";
+
+        } else if (credits >= 60 && credits <= 89) {
+            return "Junior";
+
+        } else if (credits >= 90) {
+            return "Senior";
+
+        } else {
+            return "\nInvalid input. Number of Credits must be a POSITIVE number!\n";
+        }
+
+    }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
+
+        // Calculates current Total Quality Score
+        double totalQualityScore = this.gpa * this.numberOfCredits;
+
+        // Using New Course grade & Course credits to update Total Quality Score
+        totalQualityScore += courseCredits * grade;
+
+        // Updates the student's total numberOfCredits
+        this.numberOfCredits += courseCredits;
+
+        // Calculates new GPA
+        this.gpa = totalQualityScore / this.numberOfCredits;
+
+
+
+
     }
 
-    // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
-    //  than just the class fields.
+    // TODO: Add your custom 'toString' method here.
+    //  Make sure it returns a well-formatted String rather than just the class fields.
+
+    @Override
+    public String toString() {
+
+        // Rounds the GPA to 1 decimal place
+        double roundedGPA = Math.round(gpa * 10.0) / 10.0;
+
+        return "\nStudent Name: " + name +
+                "\nStudent ID: " + studentId +
+                "\nNumber of Credits: " + numberOfCredits +
+                "\nGPA: " + roundedGPA + "\n";
+    }
+
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
