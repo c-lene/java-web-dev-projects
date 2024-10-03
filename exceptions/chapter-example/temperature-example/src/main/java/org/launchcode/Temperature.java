@@ -19,10 +19,7 @@ public class Temperature {
             } catch (TemperatureException e) {
                 e.printStackTrace();
             }
-
-
-
-            System.out.println("Value is below absolute zero");
+//            System.out.println("Value is below absolute zero");
         }
 
         fahrenheit = aFahrenheit;
